@@ -10,14 +10,14 @@ const Login = () => {
             <div id = "login-card">
                 <h2>Welcome to Chatter!</h2>
 
-                <div className = 'login-button google' onclick={() => auth.sighInWithRedirect(new firebase.auth.GoogleAuthProvider())} >
+                <div className = 'login-button google' onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())} >
                 <GoogleOutlined /> Sign-in with Google
                 </div>
 
                 <br/>
                 <br/>
 
-                <div className = 'login-button facebook' onclick={() => auth.sighInWithRedirect(new firebase.auth.FacebookAuthProvider())}>
+                <div className = 'login-button facebook' onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}>
                 <FacebookOutlined /> Sign-in with Facebook
                 </div>
             </div>
